@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/adm1.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- SideBar -->
+    <section class="full-box cover dashboard-sideBar">
+        <div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
+        <div class="full-box dashboard-sideBar-ct">
+            <div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
+                Real Pasion <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+            </div>
+            <div class="full-box dashboard-sideBar-UserInfo">
+                <figure class="full-box">
+                    <img src="img/doña1.png" alt="UserIcon">
+                    <figcaption class="text-center text-titles">Camila</figcaption>
+                </figure>
+                <ul class="full-box list-unstyled text-center">
+                    <li><a href="#!"><i class="zmdi zmdi-settings"></i></a></li>
+                    <li><a href="#!" class="btn-exit-system"><i class="zmdi zmdi-power"></i></a></li>
+                </ul>
+            </div>
+            <ul class="list-unstyled full-box dashboard-sideBar-Menu">
+                <li><a href="admin.html"><i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Dashboard</a></li>
+                <li>
+                    <a href="#!" class="btn-sideBar-SubMenu"><i class="zmdi zmdi-case zmdi-hc-fw"></i> Imágenes</a>
+                    
+                </li>
+                <li>
+                    <a href="jugadores.html" class="btn-sideBar-SubMenu"><i class="zmdi zmdi-account-add zmdi-hc-fw"></i> Jugadores</a>
+                    
+                </li>
+                <li>
+                    <a href="#!" class="btn-sideBar-SubMenu"><i class="zmdi zmdi-card zmdi-hc-fw"></i> Noticias</a>
+                    
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <!-- Content page-->
+    <section class="full-box dashboard-contentPage">
+        <!-- NavBar -->
+        <nav class="full-box dashboard-Navbar">
+            <ul class="full-box list-unstyled text-right">
+                <li class="pull-left"><a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a></li>
+                <li><a href="#!" class="btn-Notifications-area"><i class="zmdi zmdi-notifications-none"></i><span class="badge">7</span></a></li>
+                <li><a href="#!" class="btn-search"><i class="zmdi zmdi-search"></i></a></li>
+                <li><a href="#!" class="btn-modal-help"><i class="zmdi zmdi-help-outline"></i></a></li>
+            </ul>
+        </nav>
+        
+        <br><br>
+
+        
+        <div class="body">
+            <form class="form" action="agregar_jugador.php" method="POST">
+                <div class="flex-column">
+                    <label>Nombre del Jugador</label>
+                </div>
+                <div class="inputForm">
+                    <input placeholder="Ingresa el nombre del jugador" class="input" type="text" name="nombreJugador" required />
+                </div>
+        
+                <div class="flex-column">
+                    <label>Posición</label>
+                </div>
+                <div class="inputForm">
+                    <input placeholder="Ingresa la posición" class="input" type="text" name="posicionJugador" required />
+                </div>
+        
+                <div class="flex-column">
+                    <label>Edad</label>
+                </div>
+                <div class="inputForm">
+                    <input placeholder="Ingresa la edad" class="input" type="number" name="edadJugador" required />
+                </div>
+        
+                <div class="flex-column">
+                    <label>Nacionalidad</label>
+                </div>
+                <div class="inputForm">
+                    <input placeholder="Ingresa la nacionalidad" class="input" type="text" name="nacionalidadJugador" required />
+                </div>
+        
+                <button class="button-submit" type="submit">Agregar Jugador</button>
+            </form>
+        </div>
+        
+        
+
+    </section>
+
+
+
+    <!--====== Scripts -->
+    <script src="./js/sweetalert2.min.js"></script>
+    <script src="./js/sweetalert2.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/sweetalert2.min.js"></script>
+    <script src="./js/sweetalert2.min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>$.material.init();</script>
+</body>
+</html>
